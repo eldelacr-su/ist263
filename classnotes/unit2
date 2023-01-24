@@ -11,5 +11,12 @@
             <p>This is our second paragraph</p>
             <h2>best savory foods</h2>
             <h2>best sweet foods</h2>
+            <p>
+                <!-- br is a void tag, no close tag needed -->
+                tiger tiger <br>
+                burning bright <br>
+                in the forest <br>
+                of the night
+            </p>
         </body>
 </html>
