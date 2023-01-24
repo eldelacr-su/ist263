@@ -6,6 +6,9 @@
         </head>
         <body>
             <h1> Our first code notes </h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam laboriosam qui quos minima alias excepturi reiciendis tenetur quaerat aliquid consequatur totam, ea accusamus, atque, ad molestias fuga quod ipsum.</p>
+            <p> Lorem <strong>ipsum</strong>  dolor sit amet consectetur adipisicing elit. Eum ipsam laboriosam qui quos minima alias excepturi reiciendis tenetur quaerat aliquid consequatur totam, ea accusamus, atque, ad molestias fuga quod ipsum.</p>
+            <p>This is our second paragraph</p>
+            <h2>best savory foods</h2>
+            <h2>best sweet foods</h2>
         </body>
 </html>
