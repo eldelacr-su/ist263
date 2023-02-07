@@ -10,6 +10,11 @@
             <p> Lorem <strong>ipsum</strong>  dolor sit amet consectetur adipisicing elit. Eum ipsam laboriosam qui quos minima alias excepturi reiciendis tenetur quaerat aliquid consequatur totam, ea accusamus, atque, ad molestias fuga quod ipsum.</p>
             <p>This is our second paragraph</p>
             <h2>best savory foods</h2>
+            <ul>
+                <li>french fries</li>
+                <li>pizza</li>
+                
+            </ul>
             <h2>best sweet foods</h2>
             <p>
                 <!-- br is a void tag, no close tag needed -->
@@ -18,6 +23,6 @@
                 in the forest <br>
                 of the night
             </p>
-            <p>Kappa Theta Pi &kappa;&theta;&pi;</p>
+            <p>Kappa Theta Pi &Kappa;&Theta;&Pi;</p>
         </body>
 </html>
