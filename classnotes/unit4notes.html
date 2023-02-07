@@ -38,10 +38,30 @@
             <label for="">Full Name:</label>
             <input type="text" id="fullname" name="fullname">
             <br>
-            <label for="items">Items</label>
+            <label for="Items">Items:</label><br>
             <textarea name="items" id="items" cols="50" rows="3"></textarea>
+            <br>
+
+            <input type="radio" id="pickup" name="pickupdelivery" value="pickup">
+            <label for="pickup">pickup</label>
+            <input type="radio" id="delivery" name="pickupdelivery" value="delivery">
+            <label for="delivery">delivery</label>
+            <br>
+            <input type="checkbox" id="extrasauce" name="extrasauce" value="yes">
+            <label for="extrasauce">extra sauce?</label>
+            <br>
+            <label for="location">Location:</label>
+            <select name="location" id="location">
+                <option></option> <!-- blank means no option--> 
+                <option value="westcott">Westcott</option>
+                <option value="downtown">Downtown</option>
+                <option value="eastwood">Eastwood</option>
+            </select>
+            <br>
+            <label for="orderdate">Order Date: </label>
+            <input type="date" id="orderdate" name="">
+            <input type="submit" value="place order">
         </form>
-r
 
     </body>
 </html>
