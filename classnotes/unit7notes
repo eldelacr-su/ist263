@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 7 Notes</title>
+    <style>
+        h1 {
+            color: fuchsia;
+        }
+        a {
+            color: rgb(254, 0, 0);
+        }
+        a:hover {
+            color: rgb(3, 135, 251) ;
+        }
+        h1, a {
+                background-color: #cdffcd;
+        }
+        p {
+            background-size: 10%;
+            background-image: url(../Images/valentinesdayimage.jpg)
+        }
+        h1, p, a {
+            border: 5px solid #ffffff;
+            padding: 15px;
+            margin: 40px;
+        }
+        .second {
+            margin: 100px 0px 0px 0px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Psuedo Selectors, Box Model, Hex Colors</h1>
+    <a href="http://www.cbs.com">CBS</a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quas quos provident vitae voluptates esse facilis error quae mollitia! Iste quaerat ad dolores modi necessitatibus in laudantium illo natus corporis?</p>
+    <p class="second"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore quam natus odit, nulla incidunt voluptate voluptatum nesciunt illum suscipit pariatur similique sit delectus. Totam temporibus error officia illo provident.
+    </p>
+</body>
+</html>
