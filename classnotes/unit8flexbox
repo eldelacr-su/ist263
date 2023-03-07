@@ -23,13 +23,15 @@
         margin: 10px;}
            .col1 {flex: 1;}
            .col2, .col3 {flex: 2;}
-.row2 {border-top: 1px solid #c9cbd0;}
+           .row2, .row1 {border-top: 1px solid #c9cbd0;}
+           .seal {border-right: 1px solid #c9cbd0;}
         </style>
     </head>
     <body>
         
         <div class="row1">
             <div><img src="https://www.syracuse.edu/assets-static/carbon_v1/img/syracuse-university-seal-white.svg">
+                <hr>
             </div>
             <div>
                 <p>
