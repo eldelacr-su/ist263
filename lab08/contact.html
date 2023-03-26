@@ -5,23 +5,29 @@
         <title>Contact</title>
         <link rel="stylesheet" href="styles.css">
     </head>
+    <style>
+        .row1 {display: flex;}
+
+    </style>
     <body>
         <nav>
             <a href="index.html">Home</a>
             <a href="skills.html">Skills</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <div>
-       <div> <h1>Contact</h1>
+        <h1>Contact</h1>
+        <div class="row1">
+            <div class="column1"> 
         <p>Name: Erick De La Cruz</p>
         <p>Address: 900 South Crouse Avenue</p>
     </div>
-       <div> <p><a href="mailto;eldelacr@syr.edu">Erick De La Cruz's Email</a></p>
+       <div class="column2"> <p><a href="mailto;eldelacr@syr.edu">Erick De La Cruz's Email</a></p>
         <p> <img src="../Images/logo-sized-png.png" alt="LinkedIn"> <a href= "www.linkedin.com/in/erick-delacruz-hireme" >My LinkedIn Profile</a> </p>
     </div>
     </div>
-    <div>
-        <div><form action="https://formspree.io/f/mzbqerqk" method="POST">
+    <div class="row2">
+        <div class="column3">
+            <form action="https://formspree.io/f/mzbqerqk" method="POST">
             <p>This form is to help you decide on how to travel to Syracuse</p>
             <label for="number"># of Travelers:</label>
             <input type="text" id="number" name="number">
@@ -37,7 +43,7 @@
             <input type="submit" value="submit">
         </form>
         </div>
-        <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46665.09725577554!2d-76.14436439992328!3d43.02946716162495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3682f81fc95%3A0x66d4555beed7c8ee!2sEastside%2C%20Syracuse%2C%20NY!5e0!3m2!1sen!2sus!4v1675357051047!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="column4"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46665.09725577554!2d-76.14436439992328!3d43.02946716162495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3682f81fc95%3A0x66d4555beed7c8ee!2sEastside%2C%20Syracuse%2C%20NY!5e0!3m2!1sen!2sus!4v1675357051047!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div> 
     </div>
     </body>
