@@ -13,6 +13,8 @@
             .row1 div {
                 padding: 40px;
             }
+            .banner {
+                width: 100%;}
             .bannersmall {
                 max-width: 100%;
             }
@@ -27,8 +29,14 @@
             /* #3 flex wrapping so columns display on next line 
             dont forget to size columns */
             @media only screen and (max-width: 800px) {
-                body {background-color: orange;}
+                body {background-color: black;
+                color: white;}
+                .banner {display: none;}
             }
+            @media only screen and (min-width: 801px) {
+                .bannersmall {display: none}
+            }
+            /* media queries for different css for different sizes */
         </style>
     </head>
     <body>
