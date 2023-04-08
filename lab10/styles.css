@@ -75,3 +75,6 @@ body {
     border: 0;
     border-radius: 5px;
   }
+  .banner-img {
+    max-width: 100%;
+  }
