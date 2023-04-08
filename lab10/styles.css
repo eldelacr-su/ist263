@@ -1,8 +1,77 @@
-body {background-color: #F1DBBF;}
-body {color: #000000;}
-a {color: #AA5656;}
-nav {background-color: #F1DBBF;}
-nav a {color: #B99B6B;}
-nav a:hover {background-color: #B99B6B;}
-nav {padding: 10px;;}
-nav {margin-bottom: 30px;}
+body {
+    background-color: #F1DBBF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    color: #AA5656;
+  }
+  
+  nav {
+    background-color: #F1DBBF;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  
+  nav a {
+    color: #B99B6B;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #B99B6B;
+    color: #F1DBBF;
+  }
+  
+  h1, h2 {
+    margin-bottom: 0.5em;
+  }
+  
+  .row1, .row2 {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .column1, .column2, .column3, .column4 {
+    margin: 10px;
+    background-color: #E5BFBF;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .column1, .column3 {
+    flex: 1;
+    order: 1;
+  }
+  
+  .column2, .column4 {
+    flex: 1;
+    order: 2;
+  }
+  
+  form input[type="text"], form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #AA5656;
+    color: #F1DBBF;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #B99B6B;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 5px;
+  }
