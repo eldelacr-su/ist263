@@ -1,0 +1,257 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="A website about sneaker culture, trends, and controversies in the world of fashion.">
+            <title>Today's Trends</title>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+            <style>
+                body {
+                    font-family: 'Roboto', Arial, sans-serif;
+                    color: #333;
+                    background-color: #f5f5f5;
+                }
+        
+                main {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    border: 1px solid #ccc;
+                    padding: 20px;
+                }
+        
+                header {
+                    background-color: #800000;
+                    padding: 20px;
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #fff;
+                    width: 100%;
+                }
+        
+                nav ul {
+                    display: flex;
+                    justify-content: space-around;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+        
+                nav a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 16px;
+                    padding: 10px 5px;
+                    }
+        
+        
+                nav a:hover {
+                    text-decoration: underline;
+                }
+        
+                section {
+                    margin-bottom: 20px;
+                }
+        
+                h1 {
+                    color: #800000;
+                    font-size: 2.5em;
+                    text-align: center;
+                }
+        
+                h2 {
+                    color: #800000;
+                }
+        
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+        
+                .trend-img {
+                    width: 500px;
+                }
+                .controversial-img {
+                    width: 300px;
+                }
+        
+                .trend {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+        
+                .trend-image {
+                    flex: 1;
+                }
+        
+                .trend-text {
+                    flex: 1;
+                    font-size: 1.2em;
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    margin-left: 10px;
+                }
+        
+                .reverse-layout {
+                    flex-direction: row-reverse;
+                }
+        
+                .reverse-layout .trend-text {
+                    margin-right: 10px;
+                    margin-left: 0;
+                }
+        
+                .controversial-container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                }
+        
+                .controversial-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+        
+                input[type="radio"] {
+                    display: none;
+                }
+        
+                input[type="radio"] + label {
+                    display: inline-block;
+                    background-color: #800000;
+                    color: #fff;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+        
+                input[type="radio"]:checked + label {
+                    background-color: #333;
+                }
+        
+                footer {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                }
+        
+                .intro {
+                    font-weight: bold;
+                }
+            </style>
+        </head>
+        <body>
+            
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="current_trends.html">Current Trends</a></li>
+                        <li><a href="trends_of_the_past.html">Trends of the Past</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+        
+                <section>
+                    <h1>NEW TRENDS APPEAR EVERY DAY … KEEP UP</h1>
+                    <hr>
+                    <p class="intro">IN THE PAST THREE YEARS WE HAVE SEEN A SHIFT FROM SPORTSWEAR TO MORE CASUAL AND COMFORTABLE WEAR. THE WAY SHOE TECHNOLOGY HAS BEEN REVOLUTIONALIZING, ALLOWS FOR MORE STYLES TO BE PREFERRED. THE REEMERGENCE OF THE NIKE SB HAS BEEN SURREAL.</p>
+                    <!-- Add articles, images, and videos related to recent fashion and sneaker trends here -->
+                </section>
+        
+                <section>
+                    <h2>TRENDS WE ARE LOVING TODAY</h2>
+                    <hr>
+                    <div class="trend">
+                        <!-- Image 1 with link -->
+                        <div class="trend-image">
+                            <a href="https://www.scmp.com/lifestyle/fashion-beauty/article/3206550/why-everyone-buying-new-balance-sneakers-dad-shoe-right-trend-has-had-high-profile-collaborations">
+                                <img class="trend-img" src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1205697591.jpg?resize=1200:*" alt="Trend we love image 1">
+                            </a>
+                        </div>
+                        <div class="trend-text">
+                            <p>Dad Shoes are completely taking over. It appears that as we go in time a comfortable clean shoe is just the way to go. Its hard to go back from comfortability after you expand your fashion into this trend. Learn why so many people cannot take off these New Balances and other amazing 'dad' shoes'. </p>
+                        </div>
+                    </div>
+                    <div class="trend reverse-layout">
+                        <!-- Image 2 with link -->
+                        <div class="trend-image">
+                            <a href="https://www.fashionbeans.com/article/best-retro-running-shoes/">
+                                <img class="trend-img" src="https://www.fashionbeans.com/wp-content/uploads/2019/04/retro-sneakers-19-top-1.jpg" alt="Trend we love image 2">
+                            </a>
+                        </div>
+                        <div class="trend-text">
+                            <p>Honestly it is a little shocking that retro runners haven't been in style for so long. There are so many different styles who anyone can enjoy. Nike has been going crazy dropping different Nike Cortez colorways and these beautiful Nike Tailwinds shown above. Don't forget about Asics and Rebooks, they got some sick retro runners that everyone should check out. Read about some of the best options you should get your hands on!</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>CONTROVERSIAL TRENDS</h2>
+                    <hr>
+                    <p>EVERY ONCE IN A WHILE, WE GET SOME SHOES THAT ARE QUESTIONABLE. SOME OF THEM ARE JUST HORRENDOUS WHILE OTHERS MAY ACTUALLY BE WORTH A WHILE… WHAT DO YOU THINK ABOUT THESE?</p>
+        
+                    <div class="controversial-container">
+                        <!-- Image 1 -->
+                        <div class="controversial-item">
+                            <img class="controversial-img" src="https://m.media-amazon.com/images/I/51KYqRLgqnL._AC_UL1500_.jpg" alt="Controversial trend image 1">
+                            <form>
+                                <input type="radio" id="tooMuch1" name="poll1" value="TOO MUCH??">
+                                <label for="tooMuch1">TOO MUCH??</label><br>
+                                <input type="radio" id="kindOfLike1" name="poll1" value="I KIND OF LIKE 'EM">
+                                <label for="kindOfLike1">I KIND OF LIKE 'EM</label>
+                            </form>
+                        </div>
+            
+                        <!-- Image 2 -->
+                        <div class="controversial-item">
+                            <img class="controversial-img" src="Adidas-JS-Wings-Solid-Gold.jpg" alt="Controversial trend image 2">
+                            <form>
+                                <input type="radio" id="tooMuch2" name="poll2" value="TOO MUCH??">
+                                <label for="tooMuch2">TOO MUCH??</label><br>
+                                <input type="radio" id="kindOfLike2" name="poll2" value="I KIND OF LIKE 'EM">
+                                <label for="kindOfLike2">I KIND OF LIKE 'EM</label>
+                            </form>
+                        </div>
+            
+                        <!-- Image 3 -->
+                        <div class="controversial-item">
+                            <img class="controversial-img" src="https://images.complex.com/images/fl_lossy,q_auto/c_crop,h_1502,w_2671,x_229,y_1046/mlljxkq4mtowaoxhqlbh/ben-and-jerrys-nike-sb-dunk-low-chunky-dunky-cu3244-100-4" alt="Controversial trend image 3">
+                            <form>
+                                <input type="radio" id="tooMuch3" name="poll3" value="TOO MUCH??">
+                                <label for="tooMuch3">TOO MUCH??</label><br>
+                                <input type="radio" id="kindOfLike3" name="poll3" value="I KIND OF LIKE 'EM">
+                                <label for="kindOfLike3">I KIND OF LIKE 'EM</label>
+                                </form>
+                                </div>           
+                                 <!-- Image 4 -->
+                                 <div class="controversial-item">
+                                    <img class="controversial-img" src="img1.jpg" alt="Controversial trend image 4">
+                                    <form>
+                                        <input type="radio" id="tooMuch4" name="poll4" value="TOO MUCH??">
+                                        <label for="tooMuch4">TOO MUCH??</label><br>
+                                        <input type="radio" id="kindOfLike4" name="poll4" value="I KIND OF LIKE 'EM">
+                                        <label for="kindOfLike4">I KIND OF LIKE 'EM</label>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h2>SHOE OF THE DAY</h2>
+                            <hr>
+                            <!-- Shoe of the day image -->
+                            <img src="img02.jpg" alt="Shoe of the day">
+                        </section>
+                    </main>
+                    
+                    <footer>
+                        <p>created by Erick De La Cruz</p>
+                    </footer>
+                </body>
+                </html>
+                    
+            
