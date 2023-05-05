@@ -12,15 +12,15 @@
             color: #333;
             background-color: #f5f5f5;
         }
-
+    
         main {
             max-width: 1200px;
             margin: 0 auto;
             border: 1px solid #ccc;
             padding: 20px;
         }
-
-        header {
+    
+        header{
             background-color: #800000;
             padding: 20px;
             text-align: center;
@@ -29,7 +29,7 @@
             color: #fff;
             width: 100%;
         }
-
+    
         nav ul {
             display: flex;
             justify-content: space-around;
@@ -37,36 +37,39 @@
             padding: 0;
             margin: 0;
         }
-
+    
         nav a {
             color: #fff;
             text-decoration: none;
             font-size: 16px;
             padding: 10px 5px;
         }
-
+        h2 {
+            background-color: rgb(170, 168, 168);
+        }
+    
         nav a:hover {
             text-decoration: underline;
         }
-
+    
         section {
             margin-bottom: 20px;
         }
-
+    
         h1, h2 {
             color: #800000;
             text-align: center;
         }
-
+    
         h1 {
             font-size: 2.5em;
         }
-
+    
         img {
             max-width: 100%;
             height: auto;
         }
-
+    
         .intro {
             font-weight: bold;
             text-align: center;
@@ -76,43 +79,43 @@
             justify-content: space-between;
             align-items: flex-start;
         }
-
+    
         .favorite-pick {
             flex: 1;
             text-align: center;
         }
-
+    
         .favorite-pick-img {
             max-width: 100%;
             height: auto;
         }
-
+    
         .favorite-pick-blurb {
             margin-top: 10px;
         }
-
+    
         .vertical-line {
             border-left: 2px solid #ccc;
             margin: 0 20px;
-            height: 200px;
+            height: 500px;
         }
         .upcoming-releases-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 20px;
         }
-
+    
         .upcoming-release {
             text-align: center;
         }
-
+    
         .upcoming-release-img {
             max-width: 100%;
             height: auto;
             max-height: 150px;
             object-fit: cover;
         }
-
+    
         .upcoming-release-title {
             font-weight: bold;
             margin-top: 10px;
@@ -123,6 +126,32 @@
                     padding: 10px;
                     text-align: center;
                 }
+    
+        .featured-trend-past {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .featured-trend-past img {
+            flex: 1;
+            max-width: 49%;
+            height: auto;
+        }
+    
+        .featured-trend-past-text {
+            flex: 1;
+            max-width: 49%;
+            padding-left: 20px;
+        }
+        .section-link {
+    color: #800000;
+    text-decoration: none;
+}
+
+.section-link:hover {
+    text-decoration: underline;
+}
 
     </style>
 </head>
@@ -130,9 +159,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="current_trends.html">Current Trends</a></li>
-                <li><a href="trends_of_the_past.html">Trends of the Past</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#current_trends">Current Trends</a></li>
+                <li><a href="#trends_of_the_past">Trends of the Past</a></li>
             </ul>
         </nav>
     </header>
@@ -145,13 +174,15 @@
             <h2>FAVORITE PICKS OF THE MONTH</h2>
             <div class="favorite-picks-container">
                 <div class="favorite-pick">
-                    <img src="img_placeholder_01.jpg" alt="Favorite pick 1" class="favorite-pick-img">
-                    <p class="favorite-pick-blurb">Description for the favorite pick 1 goes here.</p>
+                    <img src="peaceminusone.jpg" alt="Favorite pick 1" class="favorite-pick-img">
+                    <p class="favorite-pick-blurb">PEACEMINUSONE x Nike Kwondo 1</p>
+                    <p>These are so clean yet so unusual. The Nike Kwondo's are a silloutte which many aren't too familiar of. Being so unique and so stylish, They are a must for April's top picks.</p>
                 </div>
                 <div class="vertical-line"></div>
                 <div class="favorite-pick">
-                    <img src="img_placeholder_02.jpg" alt="Favorite pick 2" class="favorite-pick-img">
-                    <p class="favorite-pick-blurb">Description for the favorite pick 2 goes here.</p>
+                    <img src="runthejewels.jpg" alt="Favorite pick 2" class="favorite-pick-img">
+                    <p class="favorite-pick-blurb">Run The Jewels x Nike SB Dunks</p>
+                    <p>This package is a gem. A pair of both low and high dunks with completely different styles yet both so iconic. Sneaker packages are always big hype but this one feels special. </p>
                 </div>
             </div>
         </section>
@@ -161,58 +192,80 @@
             <div class="upcoming-releases-container">
                 <!-- Add 9 upcoming releases with images and titles -->
                 <div class="upcoming-release">
-                    <img src="img_placeholder_01.jpg" alt="Upcoming release 1" class="upcoming-release-img">
-                    <h3 class="upcoming-release-title">Release Title 1</h3>
+                    <img src="kd15.jpg" alt="Upcoming release 1" class="upcoming-release-img">
+                    <h3 class="upcoming-release-title">Kevin Durant 15 "What The" 5/5</h3>
                 </div>
                 <div class="upcoming-release">
-                    <img src="img_placeholder_02.jpg" alt="Upcoming release 2" class="upcoming-release-img">
-                    <h3 class="upcoming-release-title">Release Title 2</h3>
+                    <img src="BodegaNB.jpg" alt="Upcoming release 2" class="upcoming-release-img">
+                    <h3 class="upcoming-release-title">Bodega x New Balance 9060 "Age of Discovery" 5/5</h3>
                 </div>
                 <div class="upcoming-release">
-                    <img src="img_placeholder_03.jpg" alt="Upcoming release 3" class="upcoming-release-img">
-                    <h3 class="upcoming-release-title">Release Title 3</h3>
+                    <img src="NikeDunkChinese.jpg" alt="Upcoming release 3" class="upcoming-release-img">
+                    <h3 class="upcoming-release-title">Nike Dunk High "San Francisco Chinatown" 5/9</h3>
                 </div>
                 <div class="upcoming-release">
-                    <img src="img_placeholder_04.jpg" alt="Upcoming release 4" class="upcoming-release-img">
-                    <h3 class="upcoming-release-title">Release Title 4</h3>
+                    <img src="SandyLiang.jpg" alt="Upcoming release 4" class="upcoming-release-img">
+                    <h3 class="upcoming-release-title">Sandy Liang x Salomon XT-Expanse 5/5</h3>
                 </div>
                 <div class="upcoming-release">
-                    <img src="img_placeholder_05.jpg" alt="Upcoming release 5" class="upcoming-release-img">
-                    <h3 class="upcoming-release-title">Release Title 5</h3>
+                    <img src="jordan2.jpg" alt="Upcoming release 5" class="upcoming-release-img">
+                    <h3 class="upcoming-release-title">Air Jordan 2 Retro “Neutral Grey” 5/6</h3>
                 </div>
                 <div class="upcoming-release">
-                    <img src="img_placeholder_06.jpg" alt="Upcoming release 6" class="upcoming-release-img">
-                    <h3 class="upcoming-release-title">Release Title 6</h3>
+                    <img src="tatum1.jpg" alt="Upcoming release 6" class="upcoming-release-img">
+                    <h3 class="upcoming-release-title">Jordan Tatum 1 “Barbershop” 5/12</h3>
                 </div>
                 <div class="upcoming-release">
-                    <img src="img_placeholder_07.jpg" alt="Upcoming release 7" class="upcoming-release-img">
-                    <h3 class="upcoming-release-title">Release Title 7</h3>
+                    <img src="questions.jpg" alt="Upcoming release 7" class="upcoming-release-img">
+                    <h3 class="upcoming-release-title">Reebok Question "Vintage Red Toe" 5/5</h3>
                 </div>
                 <div class="upcoming-release">
-                    <img src="img_placeholder_08.jpg" alt="Upcoming release 8" class="upcoming-release-img">
-                    <h3 class="upcoming-release-title">Release Title 8</h3>
+                    <img src="dunkslow1.jpg" alt="Upcoming release 8" class="upcoming-release-img">
+                    <h3 class="upcoming-release-title">Jarritos x Nike SB Dunk Low Pro QS 5/6</h3>
                 </div>
                 <div class="upcoming-release">
-                    <img src="img_placeholder_09.jpg" alt="Upcoming release 9" class="upcoming-release-img">
-                    <h3 class="upcoming-release-title">Release Title 9</h3>
+                    <img src="thunder4.jpg" alt="Upcoming release 9" class="upcoming-release-img">
+                    <h3 class="upcoming-release-title">Air Jordan 4 "Thunder"</h3>
                 </div>
             </div>
         </section>
 
     
 
-        <section>
-            <h2>TRENDS WE ARE LOVING RIGHT NOW</h2>
-            <!-- Add content related to current trends -->
+        <section id="current_trends" style="background-color: #eee; padding: 20px;">
+            <h2><a href="current_trends.html" class="section-link">TRENDS WE ARE LOVING RIGHT NOW</a></h2>
+            <div class="featured-trend-past">
+                <img src="offwhitejordan1.jpg" alt="Trend image">
+                <div class="featured-trend-past-text">
+                    <p>Today, sneaker collaborations have become a major force in the sneaker industry, with many brands releasing highly anticipated collaborations with designers, artists, and celebrities on a regular basis. These collaborations have become a way for brands to generate buzz and excitement around their releases, while also tapping into new audiences and expanding their reach. Some recent examples of highly successful sneaker collaborations include the Nike x Off-White "The Ten" collection, which featured ten iconic Nike silhouettes reimagined by fashion designer Virgil Abloh, and the Adidas x Kanye West Yeezy line, which has become one of the most popular and sought-after sneaker collaborations of all time. In addition to established designers and celebrities, brands are also collaborating with up-and-coming artists and creatives, offering them a platform to showcase their work and connect with fans in new ways. This has resulted in a diverse range of sneaker collaborations that offer unique and unexpected designs, from the colorful and whimsical collaborations between Adidas and designer Jeremy Scott, to the minimalist and understated collaborations between Converse and fashion label Comme des Garçons. Overall, sneaker collaborations have become a driving force in the sneaker industry, offering brands and partners an opportunity to create unique and innovative designs that capture the attention of sneaker enthusiasts around the world.</p>
+                </div>
+            </div>
         </section>
-
-        <section>
-            <h2>FEATURED TREND OF THE PAST</h2>
-            <!-- Add content related to the featured trend of the past -->
+        
+        <section id="trends_of_the_past">
+            <h2><a href="trends_of_the_past.html" class="section-link">FEATURED TREND OF THE PAST</a></h2>
+            <div class="featured-trend-past">
+                <img src="converseplatform.jpg" alt="Featured trend of the past image">
+                <div class="featured-trend-past-text">
+                    <p>A popular sneaker trend from the 90s was the platform sneaker trend. Platform sneakers were characterized by their thick and chunky soles that added height and made a bold fashion statement. The trend was popularized by brands like Buffalo, Steve Madden, and Converse, among others. Platform sneakers were often worn with short skirts or dresses, flared jeans, and oversized jackets for a trendy and edgy look. The trend was embraced by many music icons of the time, such as the Spice Girls and Gwen Stefani, and it became a symbol of the era's rebellious and youthful spirit. Today, platform sneakers have also made a comeback, with many modern brands and designers incorporating this style into their collections. The trend continues to offer a fun and bold way to add height and personality to any outfit..</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>created by Erick De La Cruz</p>
     </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth",
+                });
+            });
+        });
+    </script>
+    
 </body>
+
 </html>

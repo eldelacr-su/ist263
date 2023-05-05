@@ -78,11 +78,64 @@
             opacity: 1;
         }
         footer {
-                    background-color: #333;
-                    color: #fff;
-                    padding: 10px;
-                    text-align: center;
-                }
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        /* Add styles for the form */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            resize: none;
+        }
+        
+        form button {
+            padding: 8px 16px;
+            background-color: #800000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        form button:hover {
+            background-color: #a00000;
+        }
+        .era-section {
+    display: none;
+}
+.era-carousel {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Maintain aspect ratio (16:9) */
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.era-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    transform-origin: 50% 50%;
+}
+
+.era-section.active {
+    opacity: 1;
+}
+
 
 
     </style>
@@ -104,75 +157,77 @@
     </header>
     <section>
         <h2>IN THE 1980S -</h2>
-        <p>With the growth of streetwear in basketball and skateboarding, hip-hop emergence, and multiple culture shifts, the sneaker culture was born. Sneakers have been an important part of fashion ever since and streetwear grew to become a norm. The evolution of the sneaker culture has been beautiful and we want to showcase the history…</p>
-    </section>
+        <p>In the 1980s, several cultural movements were emerging simultaneously in America, which ultimately led to the birth of sneaker culture. Streetwear, which was initially popularized by skateboarding and basketball, began to gain mainstream attention. As these sports became more popular, so did the clothing and footwear associated with them, including sneakers.</p>
 
-    <section>
+           <p>At the same time, hip-hop music was also becoming increasingly popular, and sneakers became a part of hip-hop fashion as well. Many rappers and hip-hop artists began to incorporate sneakers into their outfits, and this helped to solidify the sneaker's place in popular culture.</p> 
+            
+            <p> Over time, sneaker culture evolved from being just a fashion trend to becoming a full-blown subculture. Sneaker enthusiasts, also known as sneakerheads, started collecting and trading sneakers, with some even camping outside stores to get their hands on the latest releases. This subculture has only continued to grow and evolve, with sneaker releases becoming major events and collaborations between brands and designers becoming highly sought after.</p>
+    </section>
+    <div class="era-carousel">
+    <section data-era="2010s" class="era-section">
         <h2>TOP TRENDS IN THE 2010S</h2>
-        <p>Kevin Durant, LeBron James, and Kobe Bryant all led the basketball sneaker trend. Jordans peeked and had a dropoff and the Yeezy shift took over. The 2010s was a time for the sneaker world where you had to keep up. From basketball sneakers to running shoes, athletes and stars were running the show.</p>
-        <div class="carousel">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 1" class="carousel-image active">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 2" class="carousel-image">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 3" class="carousel-image">
-        </div>
+        <p>The 2010s saw significant shifts in sneaker culture, as trends emerged and faded, and new brands and designs gained popularity. Basketball sneakers led by top NBA stars, such as Kevin Durant, LeBron James, and Kobe Bryant, dominated the industry. Meanwhile, Jordan sneakers, which had been a staple in the sneaker world for decades, experienced a drop in popularity. The decade also marked the rise of the Yeezy brand by Kanye West, which quickly became one of the most sought-after and influential lines in the industry. </p>
+        <p> Alongside these trends, retro sneakers from the 80s and 90s saw a resurgence, with many brands re-releasing classic designs from their archives. Running shoes also became increasingly popular, with Nike's Flyknit and Adidas's Boost technology leading the way in both performance and style. Throughout the decade, athletes and celebrities played a significant role in shaping the industry, both by wearing and promoting certain brands and designs and collaborating with companies to create their own lines of sneakers. Overall, the 2010s were a time of rapid change and evolution in sneaker culture, with new trends emerging and consumers always eager to keep up with the latest styles.</p>
+      
         
     </section>
 
-    <section>
+    <section data-era="2000s" class="era-section">
         <h2>TOP TRENDS IN THE 2000S</h2>
-        <p>Jordans were everywhere. Every single kid had, wanted … needed Jordans. The retros, the new ones, whichever, they were all selling. Adidas was on the come up with AI and Shaq. Nike SB was killing it in the skateboard industry but had a sharp fall off not too short after…</p>
-        <div class="carousel">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 1" class="carousel-image active">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 2" class="carousel-image">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 3" class="carousel-image">
-        </div>
+        <p>The 2000s marked a significant period in sneaker culture, with several trends that impacted the industry. Jordan sneakers continued to dominate the market, with both retro and new designs selling out quickly. Adidas made a comeback in the early 2000s with signature shoes from NBA stars like Allen Iverson and Shaquille O'Neal, while Nike SB emerged as a popular line of sneakers designed for skateboarders. However, Nike SB's popularity declined later in the decade due to oversaturation in the </p>
+
+        <p> Collaborations with athletes and celebrities, limited edition releases, and innovative designs drove the popularity of these sneakers. The industry was highly competitive, with brands vying for consumer attention and loyalty. The trends that emerged during the 2000s would continue to shape sneaker culture in the years to come.…</p>
+     
         
     </section>
 
-    <section>
+    <section data-era="1990s" class="era-section">
         <h2>TOP TRENDS IN THE 1990S</h2>
-        <p>Converse, Adidas, Nike, all fighting to stamp their names and become juggernauts. A rough time in sneaker culture besides for Jordan. His influence was amazing. Tennis shoes were still leaders.</p>
-        <div class="carousel">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 1" class="carousel-image active">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 2" class="carousel-image">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 3" class="carousel-image">
-        </div>
+        <p>In the 1990s, the sneaker industry was highly competitive, with brands such as Converse, Adidas, and Nike all vying for dominance. However, it was a challenging time for many brands, as the industry struggled to gain traction. The exception to this was Michael Jordan's line of sneakers created by Nike, which became one of the most influential and sought-after lines of sneakers of all time. Jordan's influence on sneaker culture during the 90s was unmatched, with his shoes becoming iconic symbols of basketball and street</p>
+
+        <p> Despite the struggles faced by other brands, tennis shoes remained popular throughout the decade. These shoes were often sleek and stylish, with brands such as Adidas and Reebok releasing new designs and collaborations with popular athletes. Tennis shoes were popular among both athletes and fashion-conscious consumers, and they helped to shape the sneaker culture of the 1990s. Overall, the decade was a time of intense competition and struggle in the sneaker industry, but it also saw the emergence of iconic designs and cultural icons that would shape the industry for decades to come.</p>
+
     </section>
 
-    <section>
+    <section data-era="1980s" class="era-section">
         <h2>TOP TRENDS IN THE 1980S</h2>
-        <p>The beginning of the streetwear culture. The start of athletic shoes being fun to wear and cool to have. Nike and Phil Knight designed beautiful shoes, a lot of other competitors brought shoes to spotlight as well.</p>
-        <div class="carousel">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 1" class="carousel-image active">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 2" class="carousel-image">
-            <img src="https://via.placeholder.com/400x300" alt="Sneaker 3" class="carousel-image">
-        </div>
-        
+        <p>The 1980s were a transformative period for the sneaker industry, as the emergence of streetwear culture and the growing popularity of basketball sneakers helped shape the industry. Nike, led by Phil Knight, was at the forefront of this movement, designing innovative and stylish sneakers that captured the public's imagination. The brand's collaborations with popular athletes, such as Michael Jordan, helped to solidify its position as a leader in the industry. Other competitors, including Adidas and Reebok, also released new designs and collaborations with athletes, contributing to the diversity of styles and options available to consumers. </p>
+
+        <p> The popularity of basketball sneakers was one of the most significant trends of the 1980s, driven in part by the sport's growing popularity and the emergence of stars like Michael Jordan and Magic Johnson. These sneakers were not only functional for the court, but they also became fashionable accessories off the court. Additionally, the rise of streetwear culture helped to establish sneakers as a key component of fashion, with many consumers seeking out the latest designs and collaborations. Overall, the 1980s were a period of significant change and innovation in the sneaker industry, setting the stage for the industry's continued growth and evolution in the years to come.</p>
+   
+</div>
     </section>
 
     <section>
         <h2>SEND US YOUR ALL TIME FAVORITE SHOE!</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="favorite_shoe" rows="5" placeholder="Name your favorite shoe!"></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </section>
     <footer>
         <p>created by Erick De La Cruz</p>
     </footer>
+    
     <script>
-        function initCarousel() {
-            const carouselInterval = 3000; 
-
-            document.querySelectorAll('.carousel').forEach(carousel => {
-                let activeIndex = 0;
-                const images = carousel.querySelectorAll('.carousel-image');
-
-                setInterval(() => {
-                    images[activeIndex].classList.remove('active');
-                    activeIndex = (activeIndex + 1) % images.length;
-                    images[activeIndex].classList.add('active');
-                }, carouselInterval);
+        const eraSections = document.querySelectorAll(".era-section");
+        let currentEraIndex = 0;
+    
+        function rotateEra() {
+            eraSections.forEach((section, index) => {
+                const angle = (360 / eraSections.length) * index;
+                const rotation = angle + (360 / eraSections.length) * currentEraIndex;
+                section.style.transform = `rotateY(${rotation}deg) translateZ(500px)`;
+                section.classList.toggle("active", index === currentEraIndex);
             });
+    
+            currentEraIndex = (currentEraIndex + 1) % eraSections.length;
         }
-
-        document.addEventListener('DOMContentLoaded', initCarousel);
+    
+        rotateEra();
+        setInterval(rotateEra, 5000); // Change the interval to adjust the rotation speed (5000ms = 5 seconds)
     </script>
     
 </body>
