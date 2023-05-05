@@ -77,10 +77,16 @@
         .carousel-image.active {
             opacity: 1;
         }
-
+        footer {
+                    background-color: #333;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                }
 
 
     </style>
+  
 </head>
 
 <body>
@@ -98,52 +104,48 @@
     </header>
     <section>
         <h2>IN THE 1980S -</h2>
-        <p>WITH THE GROWTH OF STREETWEAR IN BASKETBALL AND SKATEBOARDING, HIP-HOP EMERGENCE AND MULTIPLE CULTURE SHIFTS, THE SNEAKER CULTURE WAS BORN. SNEAKERS HAVE BEEN AN IMPORTANT PART TO FASHION EVER SINCE AND STREETWEAR GREW TO BECOME A NORM. THE EVOLUTION OF THE SNEAKER CULTURE HAS BEEN BEAUTIFUL AND WE WANT TO SHOWCASE THE HISTORY…</p>
+        <p>With the growth of streetwear in basketball and skateboarding, hip-hop emergence, and multiple culture shifts, the sneaker culture was born. Sneakers have been an important part of fashion ever since and streetwear grew to become a norm. The evolution of the sneaker culture has been beautiful and we want to showcase the history…</p>
     </section>
 
     <section>
         <h2>TOP TRENDS IN THE 2010S</h2>
-        <p>KD, LEBRON, KOBE ALL LED THE DECADE WITH SILLOUTES WHO RAN THE STREETS. JORDANS PEEKED AND HAD A DROPOFF AND THE YEEZY SHIFT TOOK OVER. 2010’S WAS A TIME FOR THE SNEAKER WORLD WHERE YOU HAD TO KEEP UP.</p>
+        <p>Kevin Durant, LeBron James, and Kobe Bryant all led the basketball sneaker trend. Jordans peeked and had a dropoff and the Yeezy shift took over. The 2010s was a time for the sneaker world where you had to keep up. From basketball sneakers to running shoes, athletes and stars were running the show.</p>
         <div class="carousel">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 1" class="carousel-image active">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 2" class="carousel-image">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 3" class="carousel-image">
-            <!-- Add more images as needed -->
         </div>
         
     </section>
 
     <section>
         <h2>TOP TRENDS IN THE 2000S</h2>
-        <p>JORDANS WERE EVERYWHERE. EVERY SINGLE KID HAD, WANTED … NEEDED JORDANS. THE RETROS THE NEW ONES WHICHEVER THEY WERE ALL SELLING. ADIDAS WAS ON THE COME UP WITH AI AND SHAQ. NIKE SB WAS KILLING IT IN THE SKATEBOARD INDUSTRY BUT HAD A SHARP FALL OFF NOT TOO SHORT AFTER…</p>
+        <p>Jordans were everywhere. Every single kid had, wanted … needed Jordans. The retros, the new ones, whichever, they were all selling. Adidas was on the come up with AI and Shaq. Nike SB was killing it in the skateboard industry but had a sharp fall off not too short after…</p>
         <div class="carousel">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 1" class="carousel-image active">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 2" class="carousel-image">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 3" class="carousel-image">
-            <!-- Add more images as needed -->
         </div>
         
     </section>
 
     <section>
         <h2>TOP TRENDS IN THE 1990S</h2>
-        <p>CONVERSE, ADIDAS, NIKE ALL FIGHTING TO STAMP THEIR NAMES AND BECOME JUGGERNAUGHTS. A ROUGH TIME IN SNEAKER CULTURE BESIDES FOR JORDAN. HIS INFLUENCE WAS AMAZING. TENNIS SHOES WERE STILL LEADERS.</p>
+        <p>Converse, Adidas, Nike, all fighting to stamp their names and become juggernauts. A rough time in sneaker culture besides for Jordan. His influence was amazing. Tennis shoes were still leaders.</p>
         <div class="carousel">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 1" class="carousel-image active">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 2" class="carousel-image">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 3" class="carousel-image">
-            
         </div>
     </section>
 
     <section>
         <h2>TOP TRENDS IN THE 1980S</h2>
-        <p>THE BEGINNING OF THE STREETWEAR CULTURE. THE START OF ATHLETIC SHOES BEING FUN TO WEAR AND COOL TO HAVE. NIKE AND PHIL KNIGHT DESIGNED BEAUTIFUL SHOES, A LOT OF OTHER COMPETITORS BROUGHT SHOES TO SPOTLIGHT AS WELL.</p>
+        <p>The beginning of the streetwear culture. The start of athletic shoes being fun to wear and cool to have. Nike and Phil Knight designed beautiful shoes, a lot of other competitors brought shoes to spotlight as well.</p>
         <div class="carousel">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 1" class="carousel-image active">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 2" class="carousel-image">
             <img src="https://via.placeholder.com/400x300" alt="Sneaker 3" class="carousel-image">
-            <!-- Add more images as needed -->
         </div>
         
     </section>
@@ -151,19 +153,26 @@
     <section>
         <h2>SEND US YOUR ALL TIME FAVORITE SHOE!</h2>
     </section>
+    <footer>
+        <p>created by Erick De La Cruz</p>
+    </footer>
     <script>
-        const carouselInterval = 3000; // Time between image changes (in milliseconds)
-    
-        document.querySelectorAll('.carousel').forEach(carousel => {
-            let activeIndex = 0;
-            const images = carousel.querySelectorAll('.carousel-image');
-    
-            setInterval(() => {
-                images[activeIndex].classList.remove('active');
-                activeIndex = (activeIndex + 1) % images.length;
-                images[activeIndex].classList.add('active');
-            }, carouselInterval);
-        });
+        function initCarousel() {
+            const carouselInterval = 3000; 
+
+            document.querySelectorAll('.carousel').forEach(carousel => {
+                let activeIndex = 0;
+                const images = carousel.querySelectorAll('.carousel-image');
+
+                setInterval(() => {
+                    images[activeIndex].classList.remove('active');
+                    activeIndex = (activeIndex + 1) % images.length;
+                    images[activeIndex].classList.add('active');
+                }, carouselInterval);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initCarousel);
     </script>
     
 </body>
