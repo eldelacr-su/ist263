@@ -113,27 +113,28 @@
         }
         .era-section {
     display: none;
-}
-.era-carousel {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* Maintain aspect ratio (16:9) */
-    overflow: hidden;
-    perspective: 1000px;
-}
-
-.era-section {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     opacity: 0;
-    transition: opacity 1s;
-    transform-origin: 50% 50%;
+    transition: opacity 0.5s ease-in-out;
+}
+.era-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.era-section.active {
-    opacity: 1;
+#prev-era,
+#next-era {
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#prev-era:hover,
+#next-era:hover {
+    background-color: #a00000;
 }
 
 
@@ -163,7 +164,7 @@
             
             <p> Over time, sneaker culture evolved from being just a fashion trend to becoming a full-blown subculture. Sneaker enthusiasts, also known as sneakerheads, started collecting and trading sneakers, with some even camping outside stores to get their hands on the latest releases. This subculture has only continued to grow and evolve, with sneaker releases becoming major events and collaborations between brands and designers becoming highly sought after.</p>
     </section>
-    <div class="era-carousel">
+
     <section data-era="2010s" class="era-section">
         <h2>TOP TRENDS IN THE 2010S</h2>
         <p>The 2010s saw significant shifts in sneaker culture, as trends emerged and faded, and new brands and designs gained popularity. Basketball sneakers led by top NBA stars, such as Kevin Durant, LeBron James, and Kobe Bryant, dominated the industry. Meanwhile, Jordan sneakers, which had been a staple in the sneaker world for decades, experienced a drop in popularity. The decade also marked the rise of the Yeezy brand by Kanye West, which quickly became one of the most sought-after and influential lines in the industry. </p>
@@ -195,9 +196,12 @@
 
         <p> The popularity of basketball sneakers was one of the most significant trends of the 1980s, driven in part by the sport's growing popularity and the emergence of stars like Michael Jordan and Magic Johnson. These sneakers were not only functional for the court, but they also became fashionable accessories off the court. Additionally, the rise of streetwear culture helped to establish sneakers as a key component of fashion, with many consumers seeking out the latest designs and collaborations. Overall, the 1980s were a period of significant change and innovation in the sneaker industry, setting the stage for the industry's continued growth and evolution in the years to come.</p>
    
-</div>
+        
     </section>
-
+    <div class="era-navigation">
+        <button id="prev-era" type="button">&lt; Previous</button>
+        <button id="next-era" type="button">Next &gt;</button>
+    </div>
     <section>
         <h2>SEND US YOUR ALL TIME FAVORITE SHOE!</h2>
         <form>
@@ -207,28 +211,46 @@
             <button type="submit">Submit</button>
         </form>
     </section>
+
+    
     <footer>
         <p>created by Erick De La Cruz</p>
     </footer>
     
     <script>
         const eraSections = document.querySelectorAll(".era-section");
-        let currentEraIndex = 0;
+        const prevEraBtn = document.getElementById("prev-era");
+        const nextEraBtn = document.getElementById("next-era");
+        let currentEraIndex = Array.from(eraSections).findIndex(section => section.dataset.era === "2010s");
     
-        function rotateEra() {
-            eraSections.forEach((section, index) => {
-                const angle = (360 / eraSections.length) * index;
-                const rotation = angle + (360 / eraSections.length) * currentEraIndex;
-                section.style.transform = `rotateY(${rotation}deg) translateZ(500px)`;
-                section.classList.toggle("active", index === currentEraIndex);
-            });
+        eraSections[currentEraIndex].style.display = "block";
+        eraSections[currentEraIndex].style.opacity = 1;
     
-            currentEraIndex = (currentEraIndex + 1) % eraSections.length;
+        function showEra(index) {
+            eraSections[currentEraIndex].style.opacity = 0;
+    
+            setTimeout(() => {
+                eraSections[currentEraIndex].style.display = "none";
+                currentEraIndex = index;
+                eraSections[currentEraIndex].style.display = "block";
+                setTimeout(() => {
+                    eraSections[currentEraIndex].style.opacity = 1;
+                }, 50);
+            }, 500);
         }
     
-        rotateEra();
-        setInterval(rotateEra, 5000); // Change the interval to adjust the rotation speed (5000ms = 5 seconds)
+        prevEraBtn.addEventListener("click", () => {
+            const newIndex = currentEraIndex === 0 ? eraSections.length - 1 : currentEraIndex - 1;
+            showEra(newIndex);
+        });
+    
+        nextEraBtn.addEventListener("click", () => {
+            const newIndex = (currentEraIndex + 1) % eraSections.length;
+            showEra(newIndex);
+        });
+    
     </script>
+    
     
 </body>
 </html>
